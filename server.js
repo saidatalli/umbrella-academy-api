@@ -48,12 +48,12 @@ const characters = {
     }, 
     'conductor': {
         'fullname': 'The Conductor',
-        'nickname': 'none',
+        'nickname': 'conductor',
         'characterDetails': 'The Conductor is a villain in The Umbrella Academy: Apocalypse Suite who relentlessly pursued Vanya Hargreeves in the hopes of recruiting her to his orchestra for the purpose of ending the world with a song he had written. The Conductor had found the truth about Vanya powers and brainwashed her into realising them. After turning down the Conductor offers many times, Vanya later agreed to play his song to bring on the apocalypse. While Vanya is playing the song with the orchestra, she kills the Conductor and the rest of the orchestra shortly before using her powers to bring on the apocalypse. Vanya powers devastate the moon sending chunks of it flying back to Earth. However, shortly after this, her brother Klaus managed to utilize his telekinesis to support the largest piece of the moon, preventing numerous and averting the future visited by Number Five.'
     },
     'terminal': {
         'fullname': 'Dr. Terminal',
-        'nickname': 'none',
+        'nickname': 'terminal',
         'characterDetails': 'Dr. Terminal is a villain in The Umbrella Academy: Apocalypse Suite and The Umbrella Academy: Hotel Oblivion. In the past, Terminal was diagnosed with Eisenstein Syndrome, a rare disease that eats a person from the nervous system to the brain. He was given two months to live by doctors, so he created a device that can convert matter into energy that will feed the disease and keep him alive. He then returned to his doctor office and devoured the doctors with his device. He was incarcerated and escaped by absorbing a reporter, the cell bars, all the guards, the prison warden, and the carnations near the front gate. He later kidnapped The Rumor and devoured her left arm before being defeated by Spaceboy. He battled the Umbrella Academy time and time again till he was sent to the Hotel Oblivion by The Monocle. He vowed to return and destroy the world. He also left behind the Terminauts to destroy the Umbrella Academy should they ever reform.'
     }, 
     'hazel and cha-cha': {
@@ -77,39 +77,34 @@ const characters = {
         'characterDetails': 'Perseus X is the young, spoiled heir to the Perseus Corporation. He returns to buy out all outstanding shares of the company, and name himself CEO and chairman of the board, and immediately orders a drastic change in focus of the company, planning to create his own Televator to break his father out of the Hotel Oblivion, Hargreeves interdimensional prison for supervillains. He eventually manages to break in with the help of Hotel escapee Obscuro, only to find his father dead, with his talking atomic robot head, Medusa still active. Medusa convinces Perseus to lead a mass jailbreak of all the supervillains from the hotel, who causes a reign of terror on the city that Medusa convinces Perseus X to fight and be thought of as the city new true hero. Perseus however, soon realizes Medusa is as dangerous as the other villains, and actually influences his father to commit suicide, finally lopping off the hand Medusa has attached itself to and allowing Spaceboy to throw it at a massive Dr. Terminal, who is gorging on the city, which ultimately destroys Medusa and Terminal. Perseus X is absent from the Netflix adaptation of the series, though has the possibility to appear in future seasons.'
     }, 
     'grace': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Grace Hargreeves',
+        'nickname': 'Grace',
+        'characterDetails': 'Grace is a robot designed to be the Umbrella Academy mother. She later malfunctions and “dies” after getting a pot of coffee spilled in her by Number Five. The members of the Umbrella Academy try to fix her but in the end they find her machinery to be much too complicated. In the Netflix adaptation, Grace emotionally cares for the children, even when they return as adults. Diego deactivates her out of mercy as she had been malfunctioning badly. However, Pogo reactivates her shortly after, but she is destroyed permanently during the destruction of the academy. In the second season, a human version of Grace appears in 1963 as Reginald love interest, implying that the robot was based on her.'
     }, 
-    'zero': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
-    },
     'handler': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'The Handler',
+        'nickname': 'handler',
+        'characterDetails': 'The Handler was a high-ranking member and major influencer of the Temps Commission. She was frequently seen dealing personally with matters concerning Number Five and the apocalypse, despite not being the case leader. The Handler had a clear agenda in her belief that time should not be changed, going to extreme lengths to maintain the timeline and ensure nothing is changed. She is also the adoptive mother of Lila Pitts, having assassinated the girl biological parents to take Lila for herself. The Handler is almost killed at the end of season one after being shot in the head by Hazel, and is actually killed by the Swede at the end of the second season.'
     },
     'leaonard': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Leonard Peabody',
+        'nickname': 'Harold Jenkins',
+        'characterDetails': 'As a child, he was an admirer of the Umbrella Academy and begged to join, since he was born on the same day as the result of a normal pregnancy, but was rejected and humiliated by Reginald. He later discovers Reginald diary, detailing Vanya potential, and inserts himself into her life with the goal of manipulating her into discovering her powers and using them against her siblings. After hiring thugs to rough him up in front of Vanya, he loses an eye and the prosthetic eyeball that Five found in the future is revealed to be his after his death. He is killed by Vanya after she discovers his secret but has the potential to reprise the role in season three due to the changed timeline.'
     },
     'lila': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Lila Pitts',
+        'nickname': 'lila',
+        'characterDetails': 'Lila is introduced as a fellow patient at the mental institution Diego is committed to in 1963. After she and Diego escape the institution, Lila tags along to help Diego stop the apocalypse. However, Five, who does not trust Lila, discovers she is The Handler daughter, and that in 1993, The Handler had Five execute Lila parents so she could take Lila for herself and raise her. She is one of the 43 children born on October 1, 1989, and has the ability to mirror anyone powers.'
     },
     'raymond': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Raymond Chestnut',
+        'nickname': 'raymond',
+        'characterDetails': 'Raymond is Allison second husband in the early 1960s. Raymond is an African-American man fighting for civil rights and appears in a main role in the second season of the series.'
     }, 
     'sissy': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Sissy Cooper',
+        'nickname': 'sissy',
+        'characterDetails': 'Sissy Cooper, portrayed by Marin Ireland, is Vanya friend and love interest. She is also Carl wife and Harlan mother. Sissy takes in Vanya after hitting the latter with her car and causing amnesia. She soon begins an affair with Vanya. Sissy appears in the second season of the series in a main role.'
     },
     'unknown': {
         'fullname': 'unknown',
