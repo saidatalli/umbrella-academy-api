@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors())
 
 const characters = {
     'reginald': {
@@ -36,47 +39,42 @@ const characters = {
     'ben': {
         'fullname': 'Ben Hargreeves',
         'nickname': 'Number Six',
-        'characterDetails': 'Number Six possesses eldritch monsters from other dimensions under his skin (most often appearing as tentacles emerging from his torso). He is deceased from the results of a mission gone wrong. He is portrayed by Justin H. Min and Ethan Hwang, as an adult and a teenager, respectively, in the Netflix adaptation.[29] There is a memorial statue of him located in front of the academy. Even though he has been dead since before the start of the series, he has been portrayed as a member of The Umbrella Academy, appearing as his statue counterpart, in visions, or with Klaus, through his ability to talk to the dead. He can connect with Klaus physically, lending him his ability for a moment. CBR referred to Ben as a "Jiminy Cricket" type of character as he "reminds Klaus of his moral responsibilities even if the troubled Number Four refuses to listen".Ben\'s spirit manifests during the “Hotel Oblivion” storyline, appearing before his brother Klaus in the hospital after saving him from an overdose. It is shown that the portion of his chest that held the monster\'s tentacles is now an empty cavity, and it is hinted by Ben later in the issue that the monster had escaped from its dimension. It is also implied the Hotel Oblivion was not just made to be a supervillain prison, but a trap designed by Hargreeves to contain the beast, with the villains inside meant to be used as bait.'
+        'characterDetails': 'Number Six possesses eldritch monsters from other dimensions under his skin (most often appearing as tentacles emerging from his torso). He is deceased from the results of a mission gone wrong. He is portrayed by Justin H. Min and Ethan Hwang, as an adult and a teenager, respectively, in the Netflix adaptation.  There is a memorial statue of him located in front of the academy. Even though he has been dead since before the start of the series, he has been portrayed as a member of The Umbrella Academy, appearing as his statue counterpart, in visions, or with Klaus, through his ability to talk to the dead. He can connect with Klaus physically, lending him his ability for a moment. CBR referred to Ben as a Jiminy Cricket type of character as he reminds Klaus of his moral responsibilities even if the troubled Number Four refuses to listen. Ben spirit manifests during the “Hotel Oblivion” storyline, appearing before his brother Klaus in the hospital after saving him from an overdose. It is shown that the portion of his chest that held the monster tentacles is now an empty cavity, and it is hinted by Ben later in the issue that the monster had escaped from its dimension. It is also implied the Hotel Oblivion was not just made to be a supervillain prison, but a trap designed by Hargreeves to contain the beast, with the villains inside meant to be used as bait.'
     }, 
     'vanya': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Vanya Hargreeves',
+        'nickname': 'Number Seven',
+        'characterDetails': 'The most estranged member of the umbrella group, Vanya originally showcases no particular powers other than an interest in music. Vanya is known to have written a book detailing her life with the academy and her decision to leave. According to The Conductor, leader of the Orchestra Verdammten, Vanya is the most powerful member of The Umbrella Academy. In her early childhood, The Monocle suppressed her powers and kept her on medication to maintain this, but her powers were eventually released by The Conductor, driving Vanya mad. She is capable of releasing destructive waves of force using her violin that can be strong enough to cut someones throat or destroy an entire building with a single note. After unlocking her powers, she murders the Conductor and travels to the Hargreeves mansion to destroy it, killing Pogo in the process. During the fight with her siblings, while distracted by Klaus pretending to channel Hargreeves, she is shot in the back of the head by Number 5 with Hargreeves revolver. Doctors noted she would eventually recover from her injuries, but would never play the violin again. The Netflix adaptation differs – it is Allison who shoots at Vanya; though, at the last minute Allison fires the gun next to Vanya ear instead, temporarily deafening her and causing her to lose focus on the sound of her violin and she then passes out. During the Dallas storyline, Vanya is shown in the care of her siblings in the bunker beneath the mansion ruins, partially amnesic and using a wheelchair. She was subject to some abuse by Allison in retaliation for slicing her throat, left bound in front of screens depicting the aftermath of her rampage. At the end of the storyline, Allison has a change of heart and helps her sister recover rather than punishing her. In season 2 of the adaptation, Vanya suffers from amnesia after getting hit by a car upon arrival in 1963 and becomes a live-in nanny for Sissy autistic son Harlan.[35][36] When Harlan goes missing, Vanya "uses powers to discover that Harlan actually drowned in a lake and later is able to resuscitate him by unknowingly transferring some of [her] power to him".[37] After this, Vanya enters a romantic lesbian relationship with Sissy which is kept secret from Sissy husband. Later in the season, his memories return via electroshock torture. Vanya returns to the present with his family while Sissy chooses to remain in her time.'
     }, 
     'conductor': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'The Conductor',
+        'nickname': 'none',
+        'characterDetails': 'The Conductor is a villain in The Umbrella Academy: Apocalypse Suite who relentlessly pursued Vanya Hargreeves in the hopes of recruiting her to his orchestra for the purpose of ending the world with a song he had written. The Conductor had found the truth about Vanya powers and brainwashed her into realising them. After turning down the Conductor offers many times, Vanya later agreed to play his song to bring on the apocalypse. While Vanya is playing the song with the orchestra, she kills the Conductor and the rest of the orchestra shortly before using her powers to bring on the apocalypse. Vanya powers devastate the moon sending chunks of it flying back to Earth. However, shortly after this, her brother Klaus managed to utilize his telekinesis to support the largest piece of the moon, preventing numerous and averting the future visited by Number Five.'
     },
     'terminal': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Dr. Terminal',
+        'nickname': 'none',
+        'characterDetails': 'Dr. Terminal is a villain in The Umbrella Academy: Apocalypse Suite and The Umbrella Academy: Hotel Oblivion. In the past, Terminal was diagnosed with Eisenstein Syndrome, a rare disease that eats a person from the nervous system to the brain. He was given two months to live by doctors, so he created a device that can convert matter into energy that will feed the disease and keep him alive. He then returned to his doctor office and devoured the doctors with his device. He was incarcerated and escaped by absorbing a reporter, the cell bars, all the guards, the prison warden, and the carnations near the front gate. He later kidnapped The Rumor and devoured her left arm before being defeated by Spaceboy. He battled the Umbrella Academy time and time again till he was sent to the Hotel Oblivion by The Monocle. He vowed to return and destroy the world. He also left behind the Terminauts to destroy the Umbrella Academy should they ever reform.'
     }, 
     'hazel and cha-cha': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Hazel and Cha-Cha',
+        'nickname': 'none',
+        'characterDetails': 'A pair of extremely violent assassins working for the Temps Aeternalis are named Hazel and Cha-Cha. Many in the agency, including Number Five, consider them the most dangerous team in the history of the agency, mainly for their unpredictable methods. They both wear brightly colored cartoon character masks, exhibit maniacal and psychopathic behavior, and have a love of murder and sugary snacks. After the initial failure of the first team to recapture or neutralize Number Five for defecting, they were called in to take him down. To that end, they managed to capture his brother, The Séance, torturing and eventually killing him, as well as acquiring Sir Hargreeves’ secret stockpile of nuclear weapons. They die near the end of the “Dallas” story line when The Séance, after returning from the dead, possesses Cha-Cha, kills Hazel, and then himself (as Cha-Cha). '
     },
     'carmicheal': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Atlas Jericho "A. J." Carmichael',
+        'nickname': 'A.J',
+        'characterDetails': 'A. J. Carmichael is a talking goldfish who inhabits a tank atop a human bodysuit. He is the chief authority in charge of the Temps Aeternalis. Carmichael headed the Temps Aeternalis at the time Number Five was inducted into the organization. He oversaw his training as an assassin and his DNA being bonded to that of the most notorious assassins from across history. In The Umbrella Academy: Dallas, Carmichael blackmails Number Five and The Rumor to stop Five past self from stopping the assassination of President John F. Kennedy in 1963. Unknown to them, the assassination had to be ensured so that Kennedy would never meet Sir Reginald Hargreeves and hand over nuclear missiles to him. These missiles would be detonated by Hazel and Cha-Cha and destroy the world in the Temps Aeternalis own attempt to apprehend Number Five. Carmichael explained the scope of their mission success after President Kennedy had been assassinated and the Umbrella Academy were returned to the present. Number Five then attacked and killed Carmichael out of revenge for what he had done to him, eating the goldfish alive.'
     }, 
     'phinneus': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
-    },
-    'abhijat': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'Dr. Phinneus Pogo',
+        'nickname': 'pogo',
+        'characterDetails': 'Pogo is a talking male chimp associated with The Monocle. When growing up at the academy, Spaceboy considered Mr Pogo to be his best friend. He watched most of the academy grow up and knew all of the children very well. He was also a sympathizer of Vanya plight when she is repeatedly told by Sir Reginald that she is not special, as she has no special powers. Despite this, he is murdered by Vanya after her transformation into the White Violin as a test of her power against the academy.'
     },
     'perseus': {
-        'fullname': '',
-        'nickname': '',
-        'characterDetails': ''
+        'fullname': 'John Perseus X',
+        'nickname': 'Perseus X',
+        'characterDetails': 'Perseus X is the young, spoiled heir to the Perseus Corporation. He returns to buy out all outstanding shares of the company, and name himself CEO and chairman of the board, and immediately orders a drastic change in focus of the company, planning to create his own Televator to break his father out of the Hotel Oblivion, Hargreeves interdimensional prison for supervillains. He eventually manages to break in with the help of Hotel escapee Obscuro, only to find his father dead, with his talking atomic robot head, Medusa still active. Medusa convinces Perseus to lead a mass jailbreak of all the supervillains from the hotel, who causes a reign of terror on the city that Medusa convinces Perseus X to fight and be thought of as the city new true hero. Perseus however, soon realizes Medusa is as dangerous as the other villains, and actually influences his father to commit suicide, finally lopping off the hand Medusa has attached itself to and allowing Spaceboy to throw it at a massive Dr. Terminal, who is gorging on the city, which ultimately destroys Medusa and Terminal. Perseus X is absent from the Netflix adaptation of the series, though has the possibility to appear in future seasons.'
     }, 
     'grace': {
         'fullname': '',
@@ -135,6 +133,6 @@ app.get('/api/:character', (request, response) => {
     
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is now running on port ${PORT}. Betta Catch It`)
 })
