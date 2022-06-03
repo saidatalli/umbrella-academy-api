@@ -18,11 +18,6 @@ const characters = {
                 'characterDetails': 'is the primary and longest-lasting member of the Umbrella Academy. Luther\'s principal powers are super-strength and durability. Reginald Hargreeves injected a gorilla serum into Luther to save his life, turning Luther into a half-gorilla, half-human. His body can withstand the vacuum and cold of space as long as he has a helmet on. Using his super strength, he primarily fights hand to hand. After his career with The Umbrella Academy, he moved to the moon and lived at the Annihilation.'
             },
             {
-                'fullname': 'Luther Hargreeves',
-                'nickname': 'Number One',
-                'characterDetails': 'is the primary and longest-lasting member of the Umbrella Academy. Luther\'s principal powers are super-strength and durability. Reginald Hargreeves injected a gorilla serum into Luther to save his life, turning Luther into a half-gorilla, half-human. His body can withstand the vacuum and cold of space as long as he has a helmet on. Using his super strength, he primarily fights hand to hand. After his career with The Umbrella Academy, he moved to the moon and lived at the Annihilation.'
-            },
-            {
                 'fullname': 'Diego Hargreeves',
                 'nickname': 'Number Two',
                 'characterDetails': 'He is the reckless and rebellious member of the group, as described by Reginald Hargreeves. His main ability in the comics allows him to hold his breath indefinitely. He also has a strong talent for knife-throwing (he can change the direction of projectiles in midair; also, though it has not been explored, he may be able to use mild telekinesis) and close-quarter combat. He and Luther have a clear rivalry, and Diego is often unwilling to take orders from Luther. In his teenage years, he was the bassist in the punk rock band the Prime-8s alongside drummer Body (Inspector Lupo\'s assistant), and guitarist and lead vocalist Vanya Hargreeves / Number Seven (his adopted sister), who he has romantic feelings for.'
