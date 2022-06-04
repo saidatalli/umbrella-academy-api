@@ -10,7 +10,8 @@ const characters = {
             {
                 'fullname': 'Sir Reginald Hargreeves',
                 'nickname': 'The Monocle',
-                'characterDetails': 'He is an alien disguised as a wealthy entrepreneur and world-renowned scientist. He received the Nobel Prize for his work in the cerebral advancement of the chimpanzee and founded the Umbrella Academy, a group of adopted super-powered children. Sir Reginald is cold-hearted, often mistreating and even experimenting on the children for his personal interests.[5] He refuses to let the children call him father, demanding that they address him by his codename The Monocle instead. When speaking to the children, he refers to them by number, which was assigned to the children in terms of usefulness, and has nothing to do with their actual destructive capabilities.'
+                'characterDetails': 'He is an alien disguised as a wealthy entrepreneur and world-renowned scientist. He received the Nobel Prize for his work in the cerebral advancement of the chimpanzee and founded the Umbrella Academy, a group of adopted super-powered children. Sir Reginald is cold-hearted, often mistreating and even experimenting on the children for his personal interests.[5] He refuses to let the children call him father, demanding that they address him by his codename The Monocle instead. When speaking to the children, he refers to them by number, which was assigned to the children in terms of usefulness, and has nothing to do with their actual destructive capabilities.',
+                'image': 'https://imgur.com/kC7gsgE'
             },
             {
                 'fullname': 'Luther Hargreeves',
