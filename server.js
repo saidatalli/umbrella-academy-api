@@ -5,6 +5,8 @@ const { response } = require('express')
 const PORT = 8000
 
 app.use(cors())
+// app.use(express.static('/'))
+app.use('/images', express.static('images'))
 
 const characters = { 
         "details": [
@@ -143,11 +145,12 @@ app.get('/api', (request, response) => {
     }
     
 })
-app.get('/images', (request, response) => {
-    let image = fs.readFileSync('.jpg');
-     response.writeHead (200, { 'Content-Type' : 'image/jpg'});
-     response.end(image, "binary");
-})
+
+// app.get('/images', (request, response) => {
+//     let image = fs.readFileSync('.jpg');
+//      response.writeHead (200, { 'Content-Type' : 'image/jpg'});
+//      response.end(image, "binary");
+// })
 
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is now running on port ${PORT}. Betta Catch It`)
